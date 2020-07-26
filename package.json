@@ -1,0 +1,22 @@
+{
+  "name": "backdey-mongodb-testkit",
+  "version": "1.0.0",
+  "description": "API for testing mongodb backends.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lasana Murray <info@quenk.com> (http://quenk.com)",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@quenk/noni-mongodb": "^0.3.3",
+    "mongodb": "^3.5.9",
+    "noni": "0.0.4"
+  },
+  "devDependencies": {
+    "@types/mongodb": "^3.5.25",
+    "@types/node": "^14.0.26",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  }
+}
