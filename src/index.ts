@@ -156,14 +156,14 @@ export class Testkit {
     /**
      * find documents in a collection that match the provided query object.
      */
-    find = (collection: string, qry: object) =>
-        noniCollection.find(this.db.collection(collection), qry);
+    find = (collection: string, qry: object, opts?:object) =>
+        noniCollection.find(this.db.collection(collection), qry, opts);
 
     /**
      * findOne document in a collection that matches the provided query object.
      */
-    findOne = (collection: string, qry: object) =>
-        noniCollection.findOne(this.db.collection(collection), qry);
+    findOne = (collection: string, qry: object, opts?: object) =>
+        noniCollection.findOne(this.db.collection(collection), qry, opts);
 
     /**
      * update documents in a collection that match the provided query object.

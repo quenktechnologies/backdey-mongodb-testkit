@@ -56,11 +56,11 @@ export declare class Testkit {
     /**
      * find documents in a collection that match the provided query object.
      */
-    find: (collection: string, qry: object) => Future<unknown[]>;
+    find: (collection: string, qry: object, opts?: object | undefined) => Future<unknown[]>;
     /**
      * findOne document in a collection that matches the provided query object.
      */
-    findOne: (collection: string, qry: object) => Future<noniCollection.Maybe<unknown>>;
+    findOne: (collection: string, qry: object, opts?: object | undefined) => Future<noniCollection.Maybe<unknown>>;
     /**
      * update documents in a collection that match the provided query object.
      */
