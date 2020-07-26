@@ -15,7 +15,7 @@ export interface Configuration {
      * collectionNames is an array of collection names that can be configured to
      * automically remove after each test.
      */
-    collectionNames: string;
+    collectionNames: string[];
     /**
      * removeAlLCollections if true, removes all collections after each test
      * instead of the ones in collectionNames.
@@ -31,7 +31,7 @@ export interface Configuration {
  */
 export declare class Testkit {
     __config: Partial<Configuration>;
-    constructor(__config: Partial<Configuration>);
+    constructor(__config?: Partial<Configuration>);
     config: Configuration;
     client: mongo.MongoClient;
     db: mongo.Db;

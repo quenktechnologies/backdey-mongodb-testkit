@@ -4,7 +4,7 @@
   "description": "API for testing mongodb backends.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha $(find test -name *_test.ts)"
   },
   "author": "Lasana Murray <info@quenk.com> (http://quenk.com)",
   "license": "Apache-2.0",
@@ -14,8 +14,11 @@
     "noni": "0.0.4"
   },
   "devDependencies": {
+    "@quenk/test": "^2.2.4",
+    "@types/mocha": "^8.0.0",
     "@types/mongodb": "^3.5.25",
     "@types/node": "^14.0.26",
+    "mocha": "^8.0.1",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.7"
   }

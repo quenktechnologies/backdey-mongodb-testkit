@@ -14,7 +14,7 @@ import { Type } from '@quenk/noni/lib/data/type';
 
 const defaultConfig = {
 
-    url: '',
+    url: 'mongodb://localhost/testkittest',
 
     collectionNames: [],
 
@@ -40,7 +40,7 @@ export interface Configuration {
      * collectionNames is an array of collection names that can be configured to 
      * automically remove after each test.
      */
-    collectionNames: string,
+    collectionNames: string[],
 
     /**
      * removeAlLCollections if true, removes all collections after each test
@@ -60,7 +60,7 @@ export interface Configuration {
  */
 export class Testkit {
 
-    constructor(public __config: Partial<Configuration>) { }
+    constructor(public __config: Partial<Configuration> = {}) { }
 
     config: Configuration = merge(defaultConfig, this.__config);
 
@@ -130,7 +130,12 @@ export class Testkit {
             if (that.config.dropDatabase)
                 yield noniDb.drop(that.db);
 
-            return noniClient.disconnect(that.client);
+            let client = that.client;
+
+            that.client = <Type>undefined;
+            that.db = <Type>undefined;
+
+            return noniClient.disconnect(client);
 
         });
 
