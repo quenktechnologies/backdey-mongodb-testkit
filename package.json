@@ -1,6 +1,6 @@
 {
   "name": "@quenk/backdey-mongodb-testkit",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "API for testing mongodb backends.",
   "main": [
     "lib/index.js"
