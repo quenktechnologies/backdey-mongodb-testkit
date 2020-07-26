@@ -2,7 +2,8 @@
   "name": "@quenk/backdey-mongodb-testkit",
   "version": "1.0.1",
   "description": "API for testing mongodb backends.",
-  "main": "index.js",
+  "main": ["lib/index.js"],
+  "files": ["lib"],
   "scripts": {
     "test": "./node_modules/.bin/mocha $(find test -name *_test.ts)"
   },
