@@ -1,5 +1,5 @@
 {
-  "name": "@quenk/backdey-mongodb-testkit",
+  "name": "@quenk/dback-mongodb-testkit",
   "version": "1.0.4",
   "description": "API for testing mongodb backends.",
   "main": [
