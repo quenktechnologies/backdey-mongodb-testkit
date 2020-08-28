@@ -1,4 +1,4 @@
-# Backdey Mongodb Test Suite
+# DBack MongoDB Testkit
 
 ## Introduction
 This module provides common functions used when writing tests for MongoDB based applications.
