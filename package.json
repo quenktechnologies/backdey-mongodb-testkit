@@ -1,6 +1,6 @@
 {
   "name": "@quenk/dback-mongodb-testkit",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "API for testing mongodb backends.",
   "main": "lib/index.js",
   "files": [
